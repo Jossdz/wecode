@@ -2,6 +2,7 @@ import { Appear } from "mdx-deck";
 import { CodeSurfer } from "mdx-deck-code-surfer";
 import nightOwl from "prism-react-renderer/themes/nightOwl";
 import Hello from "./components/Hello.js";
+import LangSelect from "./components/LangSelect.js";
 
 import "../i18n";
 import { Layout, Split } from "./components";
@@ -15,6 +16,8 @@ export const theme = mytheme;
 # Welcome
 
 <Hello />
+<br />
+<LangSelect />
 
 ---
 
@@ -42,8 +45,6 @@ export default Split;
 ## MDX 🤘🏼
 
 ---
-
-export default Layout;
 
 <CodeSurfer
   title="Powerfull code show"

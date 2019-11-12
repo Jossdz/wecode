@@ -9,7 +9,7 @@ i18n
     lng: "en",
     backend: {
       /* translation file path */
-      loadPath: "http://google.com/assets/i18n/{{ns}}/{{lng}}.json"
+      loadPath: "/assets/i18n/{{ns}}/{{lng}}.json"
     },
     fallbackLng: "en",
     debug: true,
