@@ -1,4 +1,16 @@
 {
-  "hello.label": "Hola",
-  "thankyou.label": "Gracias"
+  "welcome.1": "Bienvenido",
+  "title.2": "Índice",
+  "js.2": "Taller de programación con Javascript básico",
+  "jslist1.2": "Introducción",
+  "jslist2.2": "configuración del entorno",
+  "jslist3.2": "variables",
+  "jslist4.2": "tipos de datos",
+  "videogame.2": "Taller de creación de un videojuego",
+  "videogamelist1.2": "configuración del entorno",
+  "videogamelist2.2": "definición de elementos",
+  "videogamelist3.2": "pintar y animar el paisaje",
+  "videogamelist4.2": "pintar y animar nuestro personaje",
+  "title.3": "Programación",
+  "prog.3": "La programación es una rama de ciencias computacionales, puede sonar aburrido pero... no lo es. La programación también es la capacidad de llevar tus ideas y las ideas de los demás a productos digitales que las personas pueden usar para un fin, ya sea aprovechar su tiempo, aprender, etc."
 }

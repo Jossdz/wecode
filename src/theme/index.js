@@ -3,17 +3,14 @@ import Provider from "../Provider";
 
 export default {
   ...theme,
-  font: "ABeeZee, Roboto, sans-serif",
+  font: '"Roboto Mono", Poppins, Roboto, sans-serif',
   h1: {
     textTransform: "uppercase",
     fontWeight: 600,
-    color: "#3A3955"
+    fontSize: "4rem"
   },
   h2: {
-    color: "#3A3955"
-  },
-  h3: {
-    color: "#3A3955"
+    color: "#32C3FF"
   },
   monospace: '"Dank Mono", Josefin Sans, Sans Serif',
   img: {
@@ -21,17 +18,26 @@ export default {
   },
   weights: 400,
   li: {
-    paddingBottom: "20px"
+    paddingBottom: "20px",
+    fontFamily: '"Ranga","Verdana"',
+    fontSize: "0.8em"
   },
   ul: {
-    listStyle: "none",
+    // listStyle: 'none',
     paddingLeft: "20px",
     display: "inline-block"
   },
+  p: {
+    fontSize: "30px"
+  },
   colors: {
-    text: "#272A36",
-    background: "white",
-    link: "#3A3955"
+    text: "#FFF",
+    background: "#2D354C",
+    link: "#32C3FF",
+    pre: "#FFD35C",
+    preBackground: "#1E2434",
+    code: "#fff",
+    strong: "#FFD35C"
   },
   Provider
 };

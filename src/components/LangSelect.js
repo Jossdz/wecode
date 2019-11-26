@@ -4,14 +4,22 @@ import { useTranslation } from "react-i18next";
 const LangSelect = () => {
   const { t, i18n } = useTranslation();
 
-  const changeLanguage = event => {
-    i18n.changeLanguage(event.target.value);
+  const setEn = () => {
+    i18n.changeLanguage("en");
+  };
+  const setEs = () => {
+    i18n.changeLanguage("es-MX");
   };
 
   return (
-    <div onChange={changeLanguage}>
-      <input type="radio" value="en" name="language" defaultChecked /> English
-      <input type="radio" value="es-MX" name="language" /> Spanish
+    <div style={{ maxWidth: "250px" }}>
+      <i onClick={setEn} style={{ cursor: "pointer" }}>
+        🇬🇧
+      </i>
+      &nbsp; <p style={{ color: "white", display: "inline" }}>|</p> &nbsp;
+      <i onClick={setEs} style={{ cursor: "pointer" }}>
+        🇲🇽
+      </i>
     </div>
   );
 };

@@ -17,6 +17,7 @@
     "mdx-deck-code-surfer": "^0.4.1",
     "prism-react-renderer": "^0.1.4",
     "raw-loader": "^0.5.1",
-    "react-i18next": "^11.1.0"
+    "react-i18next": "^11.1.0",
+    "styled-components": "^4.4.1"
   }
 }

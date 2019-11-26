@@ -37,10 +37,10 @@ const Layout = ({ children }) => (
     <Wrapper>{children}</Wrapper>
     <Footer>
       <span>
-        <b>[Topic]</b>
+        <b>WE/CODE</b>
       </span>
       <LangSelect />
-      <span>@name</span>
+      <span>@jossdz</span>
     </Footer>
   </Fragment>
 );

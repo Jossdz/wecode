@@ -1,4 +1,14 @@
 {
-  "hello.label": "Hello",
-  "thankyou.label": "Thank you"
+  "welcome.1": "Welcome",
+  "title.2": "Index",
+  "js.2": "Basic Javascript workshop",
+  "jslist1.2": "Intro",
+  "jslist2.2": "Setup",
+  "jslist3.2": "variables",
+  "jslist4.2": "data types",
+  "videogame.2": "Videogame development workshop",
+  "videogamelist1.2": "setting up tools",
+  "videogamelist2.2": "elements definition",
+  "videogamelist3.2": "animate and printing our landscape",
+  "videogamelist4.2": "animate and painting our character"
 }

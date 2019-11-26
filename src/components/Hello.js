@@ -1,10 +1,10 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-const Hello = () => {
-  const { t, i18n } = useTranslation();
+const Hello = label => {
+  const { t } = useTranslation();
 
-  return <div>{t("hello.label")}</div>;
+  return t(label);
 };
 
 export default Hello;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Flex from "mdx-deck/dist/Flex";
 import Box from "mdx-deck/dist/Box";
 import theme from "../theme";
-
+import LangSelect from "./LangSelect";
 const Footer = styled.footer`
   font-size: 14px;
   color: #232323;
@@ -53,9 +53,10 @@ const Split = ({ children }) => {
       </Flex>
       <Footer>
         <span>
-          <b>[Topic]</b>
+          <b>WE/CODE</b>
         </span>
-        <span>@name</span>
+        <LangSelect />
+        <span>@jossdz</span>
       </Footer>
     </Root>
   );
