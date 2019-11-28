@@ -6,11 +6,17 @@
   "jslist2.2": "configuración del entorno",
   "jslist3.2": "variables",
   "jslist4.2": "tipos de datos",
+  "jslist5.2": "Estructuras de datos",
+  "jslist6.2": "Estructuras condicionales",
+  "jslist7.2": "Expresiones",
+  "jslist8.2": "ciclos",
+  "jslist9.2": "Funciones",
+  "jslist0.2": "Dom y Canvas",
   "videogame.2": "Taller de creación de un videojuego",
   "videogamelist1.2": "configuración del entorno",
   "videogamelist2.2": "definición de elementos",
   "videogamelist3.2": "pintar y animar el paisaje",
   "videogamelist4.2": "pintar y animar nuestro personaje",
   "title.3": "Programación",
-  "prog.3": "La programación es una rama de ciencias computacionales, puede sonar aburrido pero... no lo es. La programación también es la capacidad de llevar tus ideas y las ideas de los demás a productos digitales que las personas pueden usar para un fin, ya sea aprovechar su tiempo, aprender, etc."
+  "prog.3": "La programación es una rama de ciencias computacionales, puede sonar aburrido pero... no lo es. La programación también es la capacidad de llevar tus ideas y las ideas de los demás a productos digitales que las personas pueden usar para un fin."
 }
