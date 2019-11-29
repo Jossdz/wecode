@@ -198,13 +198,18 @@ export default Layout;
 <CodeSurfer
   title="Variables"
   notes="¿Existe manera de Guardar la información?"
-  code={require("!raw-loader!./Docs/my-snippet.js")}
+  code={require("!raw-loader!./Docs/variables.js")}
   lang="js"
   theme={nightOwl}
   showNumbers={false}
   dark={false}
   steps={[
-   
+   {notes: 'Tenemos 3 maneras de hacerlo'},
+   {tokens: {1: [0]}, notes: 'Usamos la palabra clave var'},
+   {tokens: {2: [1]}, notes: 'let'},
+   {tokens: {3: [1]}, notes: 'ó const'},
+   {tokens: {1: [1], 2: [2], 3: [2]}, notes: 'seguido del nombre de la variable'},
+   {tokens: {1: [2,3,4], 2: [3,4,5], 3: [3,4,5]}, notes: 'y por último igualamos al valor que queremos guardar'}
   ]}
 />
 ---
