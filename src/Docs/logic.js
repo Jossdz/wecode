@@ -1,0 +1,9 @@
+3 == 3; // true
+3 === "3"; // false
+"a" != "a"; // false
+4 != "4"; // false
+4 !== "4"; // true
+3 < 6; // true
+7 > 7; // false
+20 <= 19; // false
+6 >= 6; // true

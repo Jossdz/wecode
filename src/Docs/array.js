@@ -6,3 +6,4 @@ array[2]; // true
 array[3]; // [20]
 
 array.length; // 4
+array.push(0);

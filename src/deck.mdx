@@ -39,8 +39,8 @@ export default Split;
 - variables
 - tipos de datos
 - Estructuras de datos
-- Estructuras condicionales
 - Expresiones
+- Estructuras condicionales
 - ciclos
 - Funciones
 - intro a Dom y Canvas
@@ -290,7 +290,7 @@ export default Layout;
   code={require("!raw-loader!./Docs/array.js")}
   lang="js"
   theme={ironhack}
-  showNumbers={true}
+  showNumbers={false}
   dark={false}
   steps={[
     { tokens: { 1: [4, 17] }, notes: "Se declaran con un par de corchetes" },
@@ -313,6 +313,10 @@ export default Layout;
     {
       lines: [8],
       notes: "también nos proove de información como su longitud (cantidad)"
+    },
+    {
+      lines: [9],
+      notes: "si queremos agregar elementos tambié nos ayuda: push."
     }
   ]}
 />
@@ -337,7 +341,7 @@ export default Layout;
   code={require("!raw-loader!./Docs/object.js")}
   lang="js"
   theme={ironhack}
-  showNumbers={true}
+  showNumbers={false}
   dark={false}
   steps={[
     { tokens: { 1: [4], 11: [1] }, notes: "Se declaran con un par de llaves" },
@@ -390,3 +394,291 @@ var ironhackMex = {
 </A>
 
 ---
+
+export default Layout;
+
+# Expresiones
+
+Son operaciones que te devuelven un valor, dependiendo de la expresion el dato devuelto.
+
+---
+
+export default Layout;
+
+## Operadores aritméticos
+
+Para resolver expresiones matemáticas tenemos una serie de operadores:
+
++, -, \*, /, %, ++, --, [entre otros](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Aritm%C3%A9ticos).
+
+---
+
+export default Layout;
+
+<CodeSurfer
+  title="Expresiones matemáticas"
+  notes="Tenemos poder de usar operaciones básicas"
+  code={require("!raw-loader!./Docs/aritm.js")}
+  lang="js"
+  theme={ironhack}
+  showNumbers={false}
+  dark={false}
+  steps={[
+    { lines: [1], notes: "como sumas" },
+    { lines: [2], notes: "restas" },
+    { lines: [3], notes: "multiplicación" },
+    { lines: [4], notes: "división" },
+    { lines: [5], notes: "residuo" },
+    { lines: [7], notes: "lo importante es que son una expresion matemática" },
+    { lines: [9], notes: "por tanto devuelven un valor que se puede almacenar" }
+  ]}
+/>
+
+---
+
+export default Layout;
+
+## Operadores lógicos
+
+Son operadores que nos permiten evaluar 2 o más expresiones lógicas o valores booleanos.
+
+==, ===, !=, !==, <, >, <=, >=, !.
+
+---
+
+export default Layout;
+
+<CodeSurfer
+  title="Operadores lógicos"
+  code={require("!raw-loader!./Docs/logic.js")}
+  lang="js"
+  theme={ironhack}
+  showNumbers={false}
+  dark={false}
+  steps={[
+    { lines: [1], notes: "igual: compara el valor de los elementos" },
+    { lines: [2], notes: "doble igual: compara valor y tipo de dato" },
+    { lines: [3], notes: "diferente: compara el valor" },
+    { lines: [4], notes: "diferente: compara el valor" },
+    { lines: [5], notes: "doble diferente: compara el valor y tipo de dato" },
+    { lines: [6], notes: "menor que" },
+    { lines: [7], notes: "mayor que" },
+    { lines: [8], notes: "menor o igual que" },
+    { lines: [9], notes: "mayor o igual que" },
+    {
+      range: [1, 9],
+      notes: "también devuelven una expresión"
+    },
+    { range: [1, 9], notes: "pero su uso principal lo veremos más adelante" }
+  ]}
+/>
+
+---
+
+export default Layout;
+
+## Estructuras condicionales
+
+Cuando trabajamos en resolver un problema siempre tomamos decisiones, esto también es parte importante en la programación.
+
+---
+
+export default Layout;
+
+<Image
+  src="https://m.media-amazon.com/images/M/MV5BMjM1OTg3MjQ2N15BMl5BanBnXkFtZTgwMDQwODQwNzM@._V1_SX1777_CR0,0,1777,999_AL_.jpg"
+  alt="bandersnatch"
+/>
+
+---
+
+<CodeSurfer
+  title="if - else"
+  notes="Desiciones en el código"
+  code={require("!raw-loader!./Docs/ifs.js")}
+  lang="js"
+  theme={ironhack}
+  showNumbers={false}
+  dark={false}
+  steps={[
+    {
+      range: [6, 10],
+      notes: "sirven para ejecutar codigo en base a una condición"
+    },
+    {
+      tokens: { 6: [1] },
+      notes: "si..."
+    },
+    {
+      tokens: { 6: [3, 4, 5, 6, 7, 8, 9, 10, 11] },
+      notes: "el nombre del teacher es joss"
+    },
+    {
+      lines: [7],
+      notes: "entonces se ejecuta el código entre llaves"
+    },
+    {
+      tokens: { 8: [3] },
+      notes: "si no..."
+    },
+    {
+      lines: [9],
+      notes: "entonces se ejecuta el código del else."
+    }
+  ]}
+/>
+
+---
+
+export default Layout;
+
+<CodeSurfer
+  title="else if"
+  notes="No todo es si/no"
+  code={require("!raw-loader!./Docs/elseif.js")}
+  lang="js"
+  theme={ironhack}
+  showNumbers={false}
+  dark={false}
+  steps={[
+    {
+      range: [5, 6],
+      notes: "también podemos preguntar casos extra."
+    }
+  ]}
+/>
+
+---
+
+export default Layout;
+
+# Ciclos
+
+Otra acción que normalmente requerimos en la programación es, ejecutar cierta cantidad de veces una tarea. Para ello tenemos los ciclos.
+
+---
+
+export default Layout;
+
+<CodeSurfer
+  title="for"
+  notes="ciclos en programación"
+  code={require("!raw-loader!./Docs/for.js")}
+  lang="js"
+  theme={ironhack}
+  showNumbers={false}
+  dark={false}
+  steps={[
+    {
+      range: [6, 10],
+      notes:
+        "La estructura que nos permite realizar algo en una cantidad de veces."
+    },
+    {
+      tokens: { 1: [0, 2, 16] },
+      notes: "utiliza la palabra clave for y parentesis"
+    },
+    {
+      tokens: { 1: [3, 4, 5, 6, 7] },
+      notes: "requiere un valor inicial (donde empieza)"
+    },
+    {
+      tokens: { 1: [9, 10, 11, 12] },
+      notes: "un límite (donde termina)"
+    },
+    {
+      tokens: { 1: [14, 15] },
+      notes: "un incremento (como aumenta)"
+    },
+    {
+      tokens: { 1: [18], 2: [1, 2, 3, 4, 5, 6, 7, 8], 3: [1] },
+      notes: "y un cuerpo (que hace durante el ciclo)"
+    }
+  ]}
+/>
+
+---
+
+export default Layout;
+
+## Funciones
+
+Casi tenemos todas las piezas que necesitamos, lo que nos hace falta hasta ahora es una estructura que nos ayude a **no** repetir código y reutilizar ejecutandose cada vez que lo solicitamos, eso son las funciones.
+
+---
+
+export default Layout;
+
+<CodeSurfer
+  title="funciones"
+  notes="reutilizar código"
+  code={require("!raw-loader!./Docs/function.js")}
+  lang="js"
+  theme={ironhack}
+  showNumbers={false}
+  dark={false}
+  steps={[
+    {
+      tokens: { 1: [0] },
+      notes: "Se componen de la palabra clave function,"
+    },
+    {
+      tokens: { 1: [2] },
+      notes: "un nombre que nos servirá para invocarla"
+    },
+    {
+      tokens: { 1: [3, 4, 5, 6, 7] },
+      notes: "argumentos, como variables que dependen de la ejecución"
+    },
+    {
+      tokens: { 1: [9], 2: [1, 2, 3, 4, 5, 6, 7], 3: [1, 2, 3], 4: [1] },
+      notes: "y un cuerpo con el código a ejecutar."
+    },
+    {
+      tokens: { 3: [1] },
+      notes: "return devuelve el valor a su derecha en cada ejecución."
+    },
+    {
+      tokens: { 3: [1] },
+      notes: "(podemos prescindir de ella si no devolvemos algo)"
+    },
+    {
+      lines: [6],
+      notes: "para invocar a la funcion nos basta con..."
+    },
+    {
+      tokens: { 6: [1] },
+      notes: "colocar el nombre"
+    },
+    {
+      tokens: { 6: [2, 3, 4, 5, 6, 7] },
+      notes: "seguido de parentesis (y parametros en caso de ser necesarios)"
+    },
+    {
+      lines: [7],
+      notes:
+        "return nos permite almacenar el resultado que devuelve la ejecución"
+    }
+  ]}
+/>
+
+---
+
+export default Layout;
+
+<CodeSurfer
+  title="for"
+  notes="ciclos en programación"
+  code={require("!raw-loader!./Docs/foreach.js")}
+  lang="js"
+  theme={ironhack}
+  showNumbers={false}
+  dark={false}
+  steps={[
+    {
+      range: [6, 10],
+      notes:
+        "La estructura que nos permite realizar algo en una cantidad de veces."
+    }
+  ]}
+/>
