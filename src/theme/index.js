@@ -18,7 +18,7 @@ export default {
   },
   weights: 400,
   li: {
-    paddingBottom: "20px",
+    paddingBottom: "16px",
     fontFamily: '"Ranga","Verdana"',
     fontSize: "0.8em"
   },

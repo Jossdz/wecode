@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
 import theme from "../theme";
-import LangSelect from "./LangSelect";
 
 const Wrapper = styled.main`
   width: 100vw;
@@ -39,7 +38,6 @@ const Layout = ({ children }) => (
       <span>
         <b>WE/CODE</b>
       </span>
-      <LangSelect />
       <span>@jossdz</span>
     </Footer>
   </Fragment>

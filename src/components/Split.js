@@ -55,7 +55,6 @@ const Split = ({ children }) => {
         <span>
           <b>WE/CODE</b>
         </span>
-        <LangSelect />
         <span>@jossdz</span>
       </Footer>
     </Root>

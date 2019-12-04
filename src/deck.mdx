@@ -1,11 +1,11 @@
 import { Appear, Image } from "mdx-deck";
 import { CodeSurfer } from "mdx-deck-code-surfer";
-import nightOwl from "prism-react-renderer/themes/nightOwl";
+import ironhack from "./theme/ironhack.js";
 import Hello from "./components/Hello.js";
 import LangSelect from "./components/LangSelect.js";
 
 import "../i18n";
-import { Layout, Split, Header } from "./components";
+import { Layout, Split, Header, A } from "./components";
 
 import mytheme from "./theme";
 
@@ -32,37 +32,26 @@ export default Layout;
 
 export default Split;
 
-<div>
-  <Header label="js.2" header={2} />
-  <ul>
-    <li>{Hello("jslist1.2")}</li>
-    <li>{Hello("jslist2.2")}</li>
-    <li>{Hello("jslist3.2")}</li>
-    <li>{Hello("jslist4.2")}</li>
-    <li>{Hello("jslist5.2")}</li>
-    <li>{Hello("jslist6.2")}</li>
-    <li>{Hello("jslist7.2")}</li>
-    <li>{Hello("jslist8.2")}</li>
-    <li>{Hello("jslist9.2")}</li>
-    <li>{Hello("jslist0.2")}</li>
-  </ul>
-</div>
-<div>
-  <Header label="videogame.2" header={2} />
-  <ul>
-    <li>{Hello("videogamelist1.2")}</li>
-    <li>{Hello("videogamelist2.2")}</li>
-    <li>{Hello("videogamelist3.2")}</li>
-    <li>{Hello("videogamelist4.2")}</li>
-  </ul>
-</div>
+## Taller de Javascript
+
+- Introducción
+- configuración de herramientas
+- variables
+- tipos de datos
+- Estructuras de datos
+- Estructuras condicionales
+- Expresiones
+- ciclos
+- Funciones
+- intro a Dom y Canvas
 
 ---
 
 export default Layout;
 
-<Header label="title.3" header={1} />
-<p>{Hello("prog.3")}</p>
+## Programación
+
+La programación es una rama de ciencias computacionales, puede sonar aburrido pero... no lo es. La programación también es la capacidad de llevar tus ideas y las ideas de los demás a productos digitales que las personas pueden usar para un fin.
 
 ---
 
@@ -122,8 +111,8 @@ export default Split;
   <li>Es uno de los lenguajes más fáciles de aprender</li>
   <li>Solo necesitas un editor de texto y tu navegador para empezar</li>
   <li>
-    Tiene mucha fuerza ultimamente en la industria por poder desarrollar de todo
-    con el.
+    Ha tomado fuerza en la industria por poder desarrollar (casi) de todo con
+    el.
   </li>
 </ul>
 
@@ -156,7 +145,7 @@ export default Layout;
 
 export default Layout;
 
-# Taller de Javascript
+# Javascript
 
 <img
   src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
@@ -171,7 +160,7 @@ export default Layout;
   notes="Mostrar información en consola"
   code={require("!raw-loader!./Docs/my-snippet.js")}
   lang="js"
-  theme={nightOwl}
+  theme={ironhack}
   showNumbers={false}
   dark={false}
   steps={[
@@ -200,28 +189,204 @@ export default Layout;
   notes="¿Existe manera de Guardar la información?"
   code={require("!raw-loader!./Docs/variables.js")}
   lang="js"
-  theme={nightOwl}
+  theme={ironhack}
   showNumbers={false}
   dark={false}
   steps={[
-   {notes: 'Tenemos 3 maneras de hacerlo'},
-   {tokens: {1: [0]}, notes: 'Usamos la palabra clave var'},
-   {tokens: {2: [1]}, notes: 'let'},
-   {tokens: {3: [1]}, notes: 'ó const'},
-   {tokens: {1: [1], 2: [2], 3: [2]}, notes: 'seguido del nombre de la variable'},
-   {tokens: {1: [2,3,4], 2: [3,4,5], 3: [3,4,5]}, notes: 'y por último igualamos al valor que queremos guardar'}
+    { notes: "Tenemos 3 maneras de hacerlo" },
+    { tokens: { 1: [0] }, notes: "Usamos la palabra clave var" },
+    { tokens: { 2: [1] }, notes: "let" },
+    { tokens: { 3: [1] }, notes: "ó const" },
+    {
+      tokens: { 1: [1], 2: [2], 3: [2] },
+      notes: "seguido del nombre de la variable"
+    },
+    {
+      tokens: { 1: [2, 3, 4], 2: [3, 4, 5], 3: [3, 4, 5] },
+      notes: "y por último igualamos al valor que queremos guardar"
+    }
   ]}
 />
+
 ---
 
 export default Layout;
 
-<img
-  src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2014/png/iconmonstr-code-fork-2.png&r=127&g=218&b=202"
-  alt="fork_logo"
-  width="50px"
+# Tipos de datos
+
+---
+
+export default Layout;
+
+## String
+
+Los strings son elementos que se componen principalmente de texto entre comillas( dobles, simples o [backticks](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/template_strings)), también son llamados cadenas de texto.
+
+**Ejemplo**: "Joss", 'ironhack', \`3\`
+
+---
+
+export default Layout;
+
+## Number
+
+Como su nombre lo dice, son un tipo de datos numérico. Nos permiten realizar operaciones lógicas y matemáticas.
+
+**Ejemplo**: 1, 0, -23
+
+---
+
+export default Layout;
+
+## Boolean
+
+El tipo de dato booleano está compuesto solo de 2 posibles valores: **true** o **false**. Y también nos permiten realizar operaciones lógicas.
+
+---
+
+export default Layout;
+
+## Undefined y Null
+
+Existen 2 tipos de datos curiosos, ambos representan un valor negativo pero hay una ligera diferencia:
+
+- **undefined** es un dato que no está definido en el programa o no existe.
+
+- **null** es simplemente una asignación a proposito de 'algo' vacio.
+
+---
+
+<img src="https://i.redd.it/w3a17dx4vq401.png" />
+
+---
+
+export default Layout;
+
+## Estructuras de datos
+
+---
+
+export default Layout;
+
+Así como tenemos oportunidad de almacenar datos arbitrarios en espacios en nuestros programas tenemos estructuras para darles orden y contexto.
+
+---
+
+export default Layout;
+
+## Array
+
+Es una estructura que nos ayuda a almacenar elementos como una lista.
+
+Es una exelente herramienta para agrupar datos que podemos iterar y nos provee de herramientas para hacerlo o conocer sus elementos.
+
+---
+
+export default Layout;
+
+<CodeSurfer
+  title="Array"
+  notes="Listas de elementos"
+  code={require("!raw-loader!./Docs/array.js")}
+  lang="js"
+  theme={ironhack}
+  showNumbers={true}
+  dark={false}
+  steps={[
+    { tokens: { 1: [4, 17] }, notes: "Se declaran con un par de corchetes" },
+    {
+      tokens: { 1: [5, 8, 11, 14, 15, 16] },
+      notes: "pueden contener cualquier tipo de dato o estructura"
+    },
+    {
+      tokens: { 1: [6, 9, 12] },
+      notes: "separados por comas"
+    },
+    {
+      tokens: { 3: [0], 4: [0], 5: [0], 6: [0] },
+      notes: "podemos acceder a sus elementos con el nombre del arreglo"
+    },
+    {
+      tokens: { 3: [1, 2, 3], 4: [1, 2, 3], 5: [1, 2, 3], 6: [1, 2, 3] },
+      notes: "seguido de entre corchetes, su índice, empezando de 0"
+    },
+    {
+      lines: [8],
+      notes: "también nos proove de información como su longitud (cantidad)"
+    }
+  ]}
 />
 
-[Fork me on github!](https://github.com/Jossdz/MDXSlides)
+---
 
-_with { ...♥︎ } by [jossdz](http://jossdz.com)_
+export default Layout;
+
+## Object
+
+Los objetos son una estructura que componen un elemento con ciertas propiedades con una llave (nombre) y un valor, ayudan a dar contexto y a ordenar el código.
+
+Son exelentes para agrupar 'variables' que hacen referencia a un mismo propósito.
+
+---
+
+export default Layout;
+
+<CodeSurfer
+  title="Object"
+  notes="Objetos"
+  code={require("!raw-loader!./Docs/object.js")}
+  lang="js"
+  theme={ironhack}
+  showNumbers={true}
+  dark={false}
+  steps={[
+    { tokens: { 1: [4], 11: [1] }, notes: "Se declaran con un par de llaves" },
+    {
+      tokens: { 2: [0], 3: [0], 4: [0] },
+      notes: "Se componen de propiedades con una llave"
+    },
+    {
+      tokens: { 2: [3], 3: [3], 4: [3], 10: [1] },
+      notes: "y un valor de cualquier tipo, incluyendo estructuras."
+    },
+    {
+      notes: "Existen 2 maneras de acceder a propiedades de un objeto"
+    },
+    {
+      lines: [13],
+      notes: "Con notación de punto, nombre.propiedad"
+    },
+    {
+      lines: [14],
+      notes: "o corchetes y el nombre de la propiedad entre comillas"
+    },
+    {
+      lines: [1, 4, 5, 6, 7, 8, 9, 10, 11, 15],
+      notes: "Es muy usual tener estructuras anidadas."
+    }
+  ]}
+/>
+
+---
+
+export default Layout;
+
+# Reto
+
+Copia el código e imprime en consola al primer estudiante de Diego.
+
+```javascript
+var ironhackMex = {
+  name: "Ironhack Mex",
+  classRooms: [
+    { teacher: ["Diego"], students: ["Jorge"] },
+    { teacher: ["Kane"], students: ["Maria", "Jose"] }
+  ]
+};
+```
+
+<A target="__blank" href="https://repl.it/languages/babel">
+  repl.it
+</A>
+
+---
