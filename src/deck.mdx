@@ -667,8 +667,8 @@ export default Layout;
 export default Layout;
 
 <CodeSurfer
-  title="for"
-  notes="ciclos en programación"
+  title="forEach"
+  notes="recorrer un array"
   code={require("!raw-loader!./Docs/foreach.js")}
   lang="js"
   theme={ironhack}
@@ -676,9 +676,98 @@ export default Layout;
   dark={false}
   steps={[
     {
-      range: [6, 10],
-      notes:
-        "La estructura que nos permite realizar algo en una cantidad de veces."
+      range: [1, 5],
+      notes: "Ahora que conocemos funciones y arreglos,"
+    },
+    {
+      tokens: { 3: [0, 1, 2] },
+      notes: "podemos usar la función forEach de un arreglo"
+    },
+    {
+      tokens: { 3: [4] },
+      notes: "que requiere una función como parámetro"
+    },
+    {
+      tokens: { 3: [6] },
+      notes: "y esta función usa como parametro cada elemento del arreglo"
+    },
+    {
+      lines: [4],
+      notes: "y realiza una acción."
+    }
+  ]}
+/>
+---
+export default Layout;
+
+# Reto
+
+Consigue la suma de los números dentro del array nums iterando sus elementos
+
+```javascript
+const nums = [10, 40, 23, 40, 13, 75];
+```
+
+<small>tip: puedes crear una variable para llevar la suma</small>
+<br />
+<A target="__blank" href="https://repl.it/languages/babel">
+  repl.it
+</A>
+
+---
+
+export default Layout;
+
+# Programación orientada a objetos
+
+---
+
+export default Split;
+
+## El problema:
+
+```
+const car1 = {
+  model: '',
+  color: '',
+  status: 'off'
+}
+const car2 = {
+  model: '',
+  color: '',
+  status: 'off'
+}
+```
+
+---
+
+<img
+  src="https://d5ngkkf53wl41.cloudfront.net/tutorials/r-programming/r-object-class.jpg"
+  alt="oop"
+/>
+
+---
+
+export default Layout;
+
+La programación orientada a objetos nos ayuda a crear multiples elementos de uno base y cada uno puede tener registro de sus propias propiedades o acciones.
+
+---
+
+export default Layout;
+
+<CodeSurfer
+  title="Clases"
+  notes="poo en javascript"
+  code={require("!raw-loader!./Docs/car.js")}
+  lang="js"
+  theme={ironhack}
+  showNumbers={false}
+  dark={false}
+  steps={[
+    {
+      range: [1, 5],
+      notes: "Ahora que conocemos funciones y arreglos,"
     }
   ]}
 />
